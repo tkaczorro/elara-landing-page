@@ -86,7 +86,7 @@ a{color:inherit;}
 .hero__proof{margin-top:30px; font-size:13px; letter-spacing:.04em; color:var(--text-muted);}
 
 /* ---------- film (the video centerpiece) ---------- */
-.film{position:relative; padding:30px 48px clamp(64px,8vw,104px); overflow:hidden;}
+.film{position:relative; padding:30px 48px clamp(36px,4vw,52px); overflow:hidden;}
 .film__glow{position:absolute; left:50%; top:46%; transform:translate(-50%,-50%);
   width:min(1380px,128%); aspect-ratio:1.62/1; pointer-events:none; z-index:0;
   background:radial-gradient(ellipse, rgba(210,145,80,.30) 0%, rgba(189,149,118,.13) 40%, transparent 70%);}
@@ -200,10 +200,11 @@ a{color:inherit;}
 .proof__rcma{margin-left:auto; display:flex; align-items:center; gap:14px;}
 .proof__rcma .by{font-size:12px; color:rgba(247,240,232,.5); letter-spacing:.04em;}
 /* RCMA logo (black disc, white lettering) lit by a soft warm halo so it reads as if under the brand's light source */
-.proof__rcma-mark{position:relative; display:flex; align-items:center; justify-content:center; width:96px; height:96px; flex-shrink:0;}
+.proof__rcma-mark{position:relative; display:flex; align-items:center; justify-content:center; width:106px; height:106px; flex-shrink:0; text-decoration:none; cursor:pointer;}
 .proof__rcma-mark::before{content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:152%; height:152%; border-radius:50%; pointer-events:none;
   background:radial-gradient(circle, rgba(247,240,232,.28) 0%, rgba(232,199,150,.12) 38%, rgba(210,145,80,.04) 58%, transparent 72%);}
-.proof__rcma-logo{position:relative; z-index:1; width:78px; height:78px; object-fit:contain; display:block;}
+.proof__rcma-logo{position:relative; z-index:1; width:86px; height:86px; object-fit:contain; display:block; transition:opacity .2s;}
+.proof__rcma-mark:hover .proof__rcma-logo{opacity:.85;}
 
 /* ---------- why us ---------- */
 .why{position:relative; overflow:hidden;}
@@ -306,9 +307,9 @@ a{color:inherit;}
     <p class="hero__body">An AI reconciliation engine for regulated industries. Elara cross-checks every specification, formula and certificate against the live record — and shows you, with evidence, exactly what changed.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="mailto:elara@automaservices.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week pilot</a>
-      <a class="btn btn--ghost" href="#film"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>Watch the film</a>
+      <a class="btn btn--ghost" href="#film" onclick="playFilm(); return false;"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>Watch the film</a>
     </div>
-    <p class="hero__proof">First proven in cosmetics with RCMA. Pharma, food, chemicals — next.</p>
+    <p class="hero__proof">First proven in cosmetics with RCMA Makeup. Pharma, food, chemicals — next.</p>
   </div>
 </section>
 
@@ -421,7 +422,7 @@ a{color:inherit;}
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow"><span class="num">Proof</span>The RCMA pilot</p>
-      <p class="proof__ctx">A four-week production-readiness pilot with <em>RCMA</em> — structured as a no-fee proof-of-value engagement to validate the platform in production.</p>
+      <p class="proof__ctx">A four-week production-readiness pilot with <em>RCMA Makeup</em> — structured as a no-fee proof-of-value engagement to validate the platform in production.</p>
     </div>
     <div class="proof__ratio reveal" style="--d:.1s">
       <div class="ratio__cell">
@@ -447,9 +448,9 @@ a{color:inherit;}
       </div>
       <div class="proof__rcma">
         <span class="by">proven with</span>
-        <span class="proof__rcma-mark">
-          <img class="proof__rcma-logo" src="assets/rcma-logo.png" alt="RCMA" />
-        </span>
+        <a class="proof__rcma-mark" href="https://rcmamakeup.com" target="_blank" rel="noreferrer" aria-label="Visit RCMA Makeup website">
+          <img class="proof__rcma-logo" src="assets/rcma-logo.png" alt="RCMA Makeup" />
+        </a>
       </div>
     </div>
   </div>
@@ -470,7 +471,7 @@ a{color:inherit;}
     <div class="why__foot reveal" style="--d:.24s">
       <span class="by">a product of</span>
       <span class="div"></span>
-      <img src="assets/automa-logo.png" alt="Automa Services" />
+      <a href="https://automaservices.com" target="_blank" rel="noreferrer"><img src="assets/automa-logo.png" alt="Automa Services" /></a>
     </div>
   </div>
 </section>
@@ -480,11 +481,11 @@ a{color:inherit;}
   <span class="close__glow" aria-hidden="true"></span>
   <div class="wrap reveal">
     <p class="eyebrow">Ready when you are</p>
-    <p class="close__couplet">The same pilot RCMA ran is <em>available to you.</em></p>
+    <p class="close__couplet">The same pilot RCMA Makeup ran is <em>available to you.</em></p>
     <p class="close__sig">Built by the people who understand your work.</p>
     <div class="close__actions">
       <a class="btn btn--amber" href="mailto:elara@automaservices.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week production-readiness pilot</a>
-      <a class="btn btn--ghost" href="#film">Watch the film again</a>
+      <a class="btn btn--ghost" href="#film" onclick="playFilm(); return false;">Watch the film again</a>
     </div>
   </div>
 </section>
@@ -513,7 +514,7 @@ a{color:inherit;}
   <div class="footer__bar">
     <div class="wrap">
       <span class="footer__copy">© 2026 Automa Services. All rights reserved.</span>
-      <span class="footer__copy">First proven in cosmetics with RCMA. Pharma, food, chemicals — next.</span>
+      <span class="footer__copy">First proven in cosmetics with RCMA Makeup. Pharma, food, chemicals — next.</span>
     </div>
   </div>
 </footer>
@@ -527,7 +528,9 @@ a{color:inherit;}
   // Click-to-play video
   var filmBtn = document.getElementById('filmBtn');
   var filmMedia = document.getElementById('filmMedia');
-  if (filmBtn) filmBtn.addEventListener('click', function () {
+  function triggerPlay() {
+    var btn = document.getElementById('filmBtn');
+    if (!btn) return; // iframe already inserted
     var f = document.createElement('iframe');
     f.className = 'film__iframe';
     f.src = 'https://player.vimeo.com/video/1198470356?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1';
@@ -537,7 +540,18 @@ a{color:inherit;}
     f.setAttribute('title', 'Elara Showcase');
     filmMedia.innerHTML = '';
     filmMedia.appendChild(f);
-  });
+  }
+  if (filmBtn) filmBtn.addEventListener('click', triggerPlay);
+
+  function playFilm() {
+    var filmSection = document.getElementById('film');
+    if (filmSection) {
+      var top = filmSection.getBoundingClientRect().top + window.pageYOffset - 88;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+    setTimeout(triggerPlay, 620);
+  }
+  window.playFilm = playFilm;
 
   // Scroll reveals
   if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches && 'IntersectionObserver' in window) {
