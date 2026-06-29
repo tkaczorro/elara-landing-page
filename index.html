@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Elara — Document Reconciliation Engine</title>
-<meta name="description" content="Elara turns supplier documents into trusted, decision-ready data. An AI document reconciliation engine for regulated industries. A product of Automa Services." />
+<meta name="description" content="Elara turns supplier documents into trusted, decision-ready data. An AI document reconciliation engine for regulated industries. A product of Smart-Suited Tech." />
 <meta property="og:title" content="Elara — Document Reconciliation Engine" />
 <meta property="og:description" content="A database tells you what was true. Elara tells you what's true now." />
 <meta property="og:image" content="assets/elara-video-poster.png" />
@@ -73,6 +73,17 @@ a{color:inherit;}
 .nav__link:hover{color:var(--ink);}
 .nav__link:hover::after{transform:scaleX(1);}
 .nav__cta{margin-left:auto;}
+/* back-to-house button — returns the visitor to the Smart-Suited Tech site */
+.nav__home{margin-left:auto; display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+  border:1px solid var(--border); border-radius:var(--radius); padding:8px 16px 8px 13px;
+  background:var(--surface); color:var(--text-muted); transition:color .28s var(--ease), border-color .28s var(--ease), background .28s var(--ease), box-shadow .28s var(--ease);}
+.nav__home:hover{color:var(--ink); border-color:var(--primary); box-shadow:var(--shadow-sm);}
+.nav__home .arr{width:15px; height:15px; stroke-width:1.75; color:var(--accent-warm); flex-shrink:0; transition:transform .28s var(--ease);}
+.nav__home:hover .arr{transform:translateX(-3px);}
+.nav__home .mark{width:17px; height:17px; flex-shrink:0; display:block; color:var(--accent-warm);}
+.nav__home .lbl{font-family:var(--font-wordmark); font-weight:300; font-size:17px; letter-spacing:-.01em; line-height:1; white-space:nowrap;}
+.nav__home .lbl .pre{display:block; font-family:var(--font-sans); font-weight:400; font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--text-muted); margin-bottom:2px;}
+@media (max-width:560px){ .nav__home .lbl .full{display:none;} }
 
 /* ---------- hero ---------- */
 .hero{position:relative; text-align:center; padding:72px 48px 22px; overflow:hidden;}
@@ -248,6 +259,10 @@ a{color:inherit;}
 .footer__automa:hover{opacity:1;}
 .footer__by{font-size:12px; color:rgba(247,240,232,.5);}
 .footer__automa img{height:22px; object-fit:contain;}
+/* Smart-Suited Tech parent lockup (mark + wordmark, recolours via currentColor) */
+.sst-lockup{display:inline-flex; align-items:center; gap:9px; text-decoration:none;}
+.sst-mark{width:21px; height:21px; flex-shrink:0; display:block;}
+.sst-word{font-family:var(--font-wordmark); font-weight:400; font-size:18px; letter-spacing:-.01em; white-space:nowrap;}
 .footer__url{font-size:12.5px; color:rgba(247,240,232,.45); letter-spacing:.03em;}
 .footer__bar{border-top:1px solid rgba(247,240,232,.14); margin-top:44px; padding-top:22px;}
 .footer__bar .wrap{display:flex; justify-content:space-between; align-items:center; gap:20px;}
@@ -297,6 +312,12 @@ a{color:inherit;}
     <a class="nav__link" href="#why">Why Elara</a>
   </nav>
 
+  <a class="nav__home" href="https://smartsuitedtech.com" aria-label="Back to the Smart-Suited Tech site">
+    <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    <svg class="mark" viewBox="0 0 1254 1254" fill="currentColor" aria-hidden="true"><path d="M 1057.16 144.58 A 0.26 0.26 0.0 0 1 1057.57 144.89 C 1035.09 195.72 1010.14 249.31 985.42 301.19 Q 944.19 387.77 923.05 430.08 Q 906.02 464.13 874.13 527.50 Q 871.39 532.93 867.12 541.46 Q 834.12 607.34 816.81 641.92 Q 793.29 688.90 766.92 742.61 Q 718.28 841.67 665.70 948.42 Q 635.93 1008.87 606.56 1067.92 A 0.50 0.50 0.0 0 1 605.69 1067.97 Q 562.76 1002.91 504.10 916.88 Q 432.44 811.81 353.16 697.57 Q 351.94 695.80 350.62 693.38 A 0.57 0.56 -28.3 0 1 350.86 692.61 L 472.52 630.94 A 0.59 0.59 0.0 0 1 473.34 631.25 L 609.51 969.00 A 0.26 0.26 0.0 0 0 610.00 968.98 Q 627.01 918.15 629.26 911.38 Q 630.97 906.28 659.82 819.33 Q 677.33 766.56 690.05 727.15 Q 724.39 620.73 806.65 370.66 Q 807.70 367.47 810.94 357.25 A 5.18 5.17 78.4 0 1 812.47 354.92 Q 856.26 316.50 902.76 276.51 Q 1014.79 180.17 1033.27 164.53 Q 1037.24 161.17 1057.16 144.58 Z"></path><path d="M 615.77 878.01 A 0.48 0.48 0.0 0 1 614.84 878.00 L 562.43 680.40 A 9.21 9.15 42.9 0 1 562.27 676.43 C 573.57 613.40 586.35 548.29 597.65 481.92 A 0.97 0.94 -55.4 0 0 597.55 481.32 L 570.32 432.20 A 0.97 0.96 -43.6 0 1 570.35 431.21 L 592.37 396.64 A 1.70 1.68 -73.5 0 1 593.79 395.86 L 647.41 395.86 A 1.20 1.20 0.0 0 1 648.44 396.44 L 669.28 431.16 A 1.27 1.24 -46.0 0 1 669.29 432.42 L 641.66 481.25 A 2.15 2.14 -35.3 0 0 641.41 482.70 L 674.61 677.51 A 6.72 6.68 -41.6 0 1 674.42 680.55 L 615.77 878.01 Z"></path></svg>
+    <span class="lbl"><span class="pre">Back to</span><span class="full">Smart-Suited Tech</span></span>
+  </a>
+
 </header>
 
 <!-- ============ HERO ============ -->
@@ -306,7 +327,7 @@ a{color:inherit;}
     <h1 class="hero__head">A database tells you what was true.<br />Elara tells you <span class="amber">what's true now.</span></h1>
     <p class="hero__body">An AI reconciliation engine for regulated industries. Elara cross-checks every specification, formula and certificate against the live record — and shows you, with evidence, exactly what changed.</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="mailto:elara@automaservices.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week pilot</a>
+      <a class="btn btn--primary" href="mailto:contact@smartsuitedtech.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week pilot</a>
       <a class="btn btn--ghost" href="#film" onclick="playFilm(); return false;"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>Watch the film</a>
     </div>
     <p class="hero__proof">First proven in cosmetics with RCMA Makeup. Pharma, food, chemicals — next.</p>
@@ -324,7 +345,7 @@ a{color:inherit;}
     <figure class="film__frame">
       <div class="film__media" id="filmMedia">
         <button class="film__btn" id="filmBtn" aria-label="Play the Elara showcase film">
-          <img class="film__poster" src="assets/elara-video-poster.png" width="1920" height="1080" alt="Elara — turns supplier documents into trusted, decision-ready data. A product of Automa Services." />
+          <img class="film__poster" src="assets/elara-video-poster.png" width="1920" height="1080" alt="Elara — turns supplier documents into trusted, decision-ready data. A product of Smart-Suited Tech." />
           <span class="film__pulse" aria-hidden="true"></span>
           <span class="film__play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="7 5 20 12 7 19 7 5"></polygon></svg></span>
         </button>
@@ -465,13 +486,16 @@ a{color:inherit;}
       <h2 class="why__sig">Built by the people who <span class="amber">understand your work.</span></h2>
     </div>
     <div class="why__body">
-      <p class="reveal" style="--d:.08s">Most AI vendors are technologists guessing at regulated workflows. <strong>Automa came from those workflows</strong> — a process-improvement and regulated-operations background, with the six-sigma DNA to match.</p>
+      <p class="reveal" style="--d:.08s">Most AI vendors are technologists guessing at regulated workflows. <strong>Smart-Suited Tech came from those workflows</strong> — a process-improvement and regulated-operations background, with the six-sigma DNA to match.</p>
       <p class="reveal" style="--d:.16s">That means Elara was built by people who have lived the actual operational problem it solves: the contradictory documents, the audit questions, the cost of getting reconciliation wrong.</p>
     </div>
     <div class="why__foot reveal" style="--d:.24s">
       <span class="by">a product of</span>
       <span class="div"></span>
-      <a href="https://automaservices.com" target="_blank" rel="noreferrer"><img src="assets/automa-logo.png" alt="Automa Services" /></a>
+      <a class="sst-lockup" href="https://smartsuitedtech.com" target="_blank" rel="noreferrer" style="color:var(--ink);">
+        <svg class="sst-mark" viewBox="0 0 1254 1254" fill="currentColor" aria-hidden="true"><path d="M 1057.16 144.58 A 0.26 0.26 0.0 0 1 1057.57 144.89 C 1035.09 195.72 1010.14 249.31 985.42 301.19 Q 944.19 387.77 923.05 430.08 Q 906.02 464.13 874.13 527.50 Q 871.39 532.93 867.12 541.46 Q 834.12 607.34 816.81 641.92 Q 793.29 688.90 766.92 742.61 Q 718.28 841.67 665.70 948.42 Q 635.93 1008.87 606.56 1067.92 A 0.50 0.50 0.0 0 1 605.69 1067.97 Q 562.76 1002.91 504.10 916.88 Q 432.44 811.81 353.16 697.57 Q 351.94 695.80 350.62 693.38 A 0.57 0.56 -28.3 0 1 350.86 692.61 L 472.52 630.94 A 0.59 0.59 0.0 0 1 473.34 631.25 L 609.51 969.00 A 0.26 0.26 0.0 0 0 610.00 968.98 Q 627.01 918.15 629.26 911.38 Q 630.97 906.28 659.82 819.33 Q 677.33 766.56 690.05 727.15 Q 724.39 620.73 806.65 370.66 Q 807.70 367.47 810.94 357.25 A 5.18 5.17 78.4 0 1 812.47 354.92 Q 856.26 316.50 902.76 276.51 Q 1014.79 180.17 1033.27 164.53 Q 1037.24 161.17 1057.16 144.58 Z"></path><path d="M 615.77 878.01 A 0.48 0.48 0.0 0 1 614.84 878.00 L 562.43 680.40 A 9.21 9.15 42.9 0 1 562.27 676.43 C 573.57 613.40 586.35 548.29 597.65 481.92 A 0.97 0.94 -55.4 0 0 597.55 481.32 L 570.32 432.20 A 0.97 0.96 -43.6 0 1 570.35 431.21 L 592.37 396.64 A 1.70 1.68 -73.5 0 1 593.79 395.86 L 647.41 395.86 A 1.20 1.20 0.0 0 1 648.44 396.44 L 669.28 431.16 A 1.27 1.24 -46.0 0 1 669.29 432.42 L 641.66 481.25 A 2.15 2.14 -35.3 0 0 641.41 482.70 L 674.61 677.51 A 6.72 6.68 -41.6 0 1 674.42 680.55 L 615.77 878.01 Z"></path></svg>
+        <span class="sst-word">Smart-Suited Tech</span>
+      </a>
     </div>
   </div>
 </section>
@@ -484,7 +508,7 @@ a{color:inherit;}
     <p class="close__couplet">The same pilot RCMA Makeup ran is <em>available to you.</em></p>
     <p class="close__sig">Built by the people who understand your work.</p>
     <div class="close__actions">
-      <a class="btn btn--amber" href="mailto:elara@automaservices.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week production-readiness pilot</a>
+      <a class="btn btn--amber" href="mailto:contact@smartsuitedtech.com?subject=Elara%20%E2%80%94%20book%20a%20pilot">Book a four-week production-readiness pilot</a>
       <a class="btn btn--ghost" href="#film" onclick="playFilm(); return false;">Watch the film again</a>
     </div>
   </div>
@@ -500,20 +524,23 @@ a{color:inherit;}
       </div>
       <p class="footer__blurb">Document Reconciliation Engine for regulated industries. A database tells you what was true — Elara tells you what's true now.</p>
       <div class="footer__contact">
-        <a href="mailto:elara@automaservices.com"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>elara@automaservices.com</a>
+        <a href="mailto:contact@smartsuitedtech.com"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>contact@smartsuitedtech.com</a>
       </div>
     </div>
     <div class="footer__right">
-      <a class="footer__automa" href="https://automaservices.com" target="_blank" rel="noreferrer">
+      <a class="footer__automa" href="https://smartsuitedtech.com" target="_blank" rel="noreferrer">
         <span class="footer__by">a product of</span>
-        <img src="assets/automa-logo-white.png" alt="Automa Services" />
+        <span class="sst-lockup" style="color:var(--cream);">
+          <svg class="sst-mark" viewBox="0 0 1254 1254" fill="currentColor" aria-hidden="true"><path d="M 1057.16 144.58 A 0.26 0.26 0.0 0 1 1057.57 144.89 C 1035.09 195.72 1010.14 249.31 985.42 301.19 Q 944.19 387.77 923.05 430.08 Q 906.02 464.13 874.13 527.50 Q 871.39 532.93 867.12 541.46 Q 834.12 607.34 816.81 641.92 Q 793.29 688.90 766.92 742.61 Q 718.28 841.67 665.70 948.42 Q 635.93 1008.87 606.56 1067.92 A 0.50 0.50 0.0 0 1 605.69 1067.97 Q 562.76 1002.91 504.10 916.88 Q 432.44 811.81 353.16 697.57 Q 351.94 695.80 350.62 693.38 A 0.57 0.56 -28.3 0 1 350.86 692.61 L 472.52 630.94 A 0.59 0.59 0.0 0 1 473.34 631.25 L 609.51 969.00 A 0.26 0.26 0.0 0 0 610.00 968.98 Q 627.01 918.15 629.26 911.38 Q 630.97 906.28 659.82 819.33 Q 677.33 766.56 690.05 727.15 Q 724.39 620.73 806.65 370.66 Q 807.70 367.47 810.94 357.25 A 5.18 5.17 78.4 0 1 812.47 354.92 Q 856.26 316.50 902.76 276.51 Q 1014.79 180.17 1033.27 164.53 Q 1037.24 161.17 1057.16 144.58 Z"></path><path d="M 615.77 878.01 A 0.48 0.48 0.0 0 1 614.84 878.00 L 562.43 680.40 A 9.21 9.15 42.9 0 1 562.27 676.43 C 573.57 613.40 586.35 548.29 597.65 481.92 A 0.97 0.94 -55.4 0 0 597.55 481.32 L 570.32 432.20 A 0.97 0.96 -43.6 0 1 570.35 431.21 L 592.37 396.64 A 1.70 1.68 -73.5 0 1 593.79 395.86 L 647.41 395.86 A 1.20 1.20 0.0 0 1 648.44 396.44 L 669.28 431.16 A 1.27 1.24 -46.0 0 1 669.29 432.42 L 641.66 481.25 A 2.15 2.14 -35.3 0 0 641.41 482.70 L 674.61 677.51 A 6.72 6.68 -41.6 0 1 674.42 680.55 L 615.77 878.01 Z"></path></svg>
+          <span class="sst-word">Smart-Suited Tech</span>
+        </span>
       </a>
-      <span class="footer__url">automaservices.com/elara</span>
+      <span class="footer__url">smartsuitedtech.com/elara</span>
     </div>
   </div>
   <div class="footer__bar">
     <div class="wrap">
-      <span class="footer__copy">© 2026 Automa Services. All rights reserved.</span>
+      <span class="footer__copy">© 2026 Smart-Suited Tech. All rights reserved.</span>
       <span class="footer__copy">First proven in cosmetics with RCMA Makeup. Pharma, food, chemicals — next.</span>
     </div>
   </div>
